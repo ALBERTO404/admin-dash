@@ -26,10 +26,11 @@ $sqlquery = mysqli_query($conn,"SELECT * FROM contactus");
 								<tr>
 									<th>No.</th>
 									<th>First Name</th>
+									<th>last name</th>
 									<th>Phone Number</th>
 									<th>Email</th>
 									<th>message</th>
-									<th>created_at</th>
+									<th>created</th>
 								</tr>
 							</thead>
 							<tbody>
@@ -37,10 +38,11 @@ $sqlquery = mysqli_query($conn,"SELECT * FROM contactus");
 									<tr>
 										<td><?php echo $fetchRecords['no']?></td>
 										<td><?php echo $fetchRecords['firstname']?></td>
+										<td><?php echo $fetchRecords['lastname']?></td>
 										<td><?php echo $fetchRecords['phonenumber']?></td>
 										<td><?php echo $fetchRecords['email']?></td>
 										<td><?php echo $fetchRecords['message']?></td>
-										<td><?php echo $fetchRecords['created_at']?></td>
+										<td><?php echo $fetchRecords['created']?></td>
 									</tr>
 								<?php }?>
 								
