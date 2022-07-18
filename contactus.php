@@ -43,6 +43,11 @@ $sqlquery = mysqli_query($conn,"SELECT * FROM contactus");
 										<td><?php echo $fetchRecords['email']?></td>
 										<td><?php echo $fetchRecords['message']?></td>
 										<td><?php echo $fetchRecords['created']?></td>
+										<td>
+											<a href="edit-contactus.php?id=<?php echo $fetchRecords['no'] ?>" class="btn btn-primary"><i class="fa fa-edit"></i></a>
+											<a href="view-contactus.php?id=<?php echo $fetchRecords['no'] ?>"  class="btn btn-info btn-sm"><i class="fa fa-eye"></i></a>
+											<a href="delete-contactus.php?id=<?php echo $fetchRecords['no']?>" class="btn btn-danger"><i class="fa fa-trash"></i></a>
+									</td>
 									</tr>
 								<?php }?>
 								
