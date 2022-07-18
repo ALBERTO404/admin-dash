@@ -18,7 +18,7 @@ $sqlquery = mysqli_query($conn,"SELECT * FROM contactus");
 			<div class="row">
 				<div class="col-lg-12 pt-3">
 					<div class="card-header bg-dark text-white text-center">
-						<span>Contactus</span>
+						<span>Messages</span>
 					</div>
 					<div class="card-body">
 						<table class="table table-striped table-hover">
