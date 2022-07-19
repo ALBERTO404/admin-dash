@@ -69,7 +69,7 @@ if(isset($_POST["submitapplication"]))
                         </div>
                         <div class="col-lg-6">
                             <label for="gender" class="form-label"><b>What is your gender</b></label>
-                            <select name="gender" class="form-select" aria-label="Default select example">
+                            <select name="gender" class="form-control" aria-label="Default select example">
                                 <option selected>--select your gender--</option>
                                 <option value="Male">Male</option>
                                 <option value="Female">Female</option>
@@ -84,7 +84,7 @@ if(isset($_POST["submitapplication"]))
                 <div class="row">
                     <div class="col-lg-6">
                         <label for="gender" class="form-label"><b>What's your preffered course</b></label>
-                        <select class="form-select" name="course"  aria-label="Default select example">
+                        <select class="form-control" name="course"  aria-label="Default select example">
                             <option selected>--select your course--</option>
                             <option value="Software Development">Software Development</option>
                             <option value="Data analysis">Data analysis</option>
