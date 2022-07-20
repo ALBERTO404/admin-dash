@@ -49,9 +49,9 @@ if(isset($_POST["submitapplication"]))
 	</div>
 	<div class="main-content">
 		<div class="container-fluid">
-        <form action="enroll.php" method="POST" class="container">
+        <form action="add-students.php" method="POST" class="container">
                     <h5 class="card-title">Sign up today?</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    
                     <div class="row">
                         <div class="col-lg-6">
                             <label for="fullname" class="form-label">Full Name:</label>
@@ -69,7 +69,7 @@ if(isset($_POST["submitapplication"]))
                         </div>
                         <div class="col-lg-6">
                             <label for="gender" class="form-label"><b>What is your gender</b></label>
-                            <select name="gender" class="form-control" aria-label="Default select example">
+                            <select name="gender" class="form-select" aria-label="Default select example">
                                 <option selected>--select your gender--</option>
                                 <option value="Male">Male</option>
                                 <option value="Female">Female</option>
@@ -77,14 +77,12 @@ if(isset($_POST["submitapplication"]))
                         </div>
                     </div>   
                     <div class="row" style="padding-top:5%;">
-                        <p>
-                            In order to complete your registration to the bootcamp, you are required to select one course you will be undertaking. Please NOTE that this will be your learning track during the 2-weeks immersion.
-                        </p>
+                        
                     </div>
                 <div class="row">
                     <div class="col-lg-6">
                         <label for="gender" class="form-label"><b>What's your preffered course</b></label>
-                        <select class="form-control" name="course"  aria-label="Default select example">
+                        <select class="form-select" name="course"  aria-label="Default select example">
                             <option selected>--select your course--</option>
                             <option value="Software Development">Software Development</option>
                             <option value="Data analysis">Data analysis</option>
@@ -93,14 +91,9 @@ if(isset($_POST["submitapplication"]))
                 </div>
            
                 <div class="row text-cntre" style="padding-top:2%">
-                    <p">
-                        You agree by providing your information you understand all our data privacy and protection policy outlined in out Terms & condition and the Privacy Policy statements.
-                    </p>
+                    
 
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">Agree terms and condition.</label>
-                    </div>
+                    
                     <div class="row" style="padding-top:8px;">
                         <div class="col-lg-3">
                             <button type="submit" name="submitapplication" class="btn btn-primary">submit application</button>
@@ -110,8 +103,19 @@ if(isset($_POST["submitapplication"]))
                 </div>
                 </form>
 
-			
-		</div>	
+                    
+             
+            </div>
+        </div>        
+        <div class="row">
+            
+            <form action="aboutus.php" method="POST">
+                <div class="row">
+                    <div class="col-lg-4">
+                    </div>
+                    
+                    
+        	
 	</div>
 	
 	<?php require_once('includes/scripts.php')?>
